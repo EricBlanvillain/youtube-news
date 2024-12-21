@@ -1,29 +1,32 @@
-# YouTube News
+# YouTube News - Lex Fridman Video Transcripts
 
-Une application web qui récupère et résume automatiquement les transcriptions des vidéos YouTube de Lex Fridman.
+Automated system to fetch and summarize Lex Fridman's YouTube videos transcripts.
 
-## Configuration
+## Features
+- Fetches latest videos from Lex Fridman's channel
+- Extracts video transcripts
+- Provides easy-to-use API endpoints
 
-1. Clonez le repository
-```bash
-git clone https://github.com/EricBlanvillain/youtube-news.git
-cd youtube-news
-```
-
-2. Installez les dépendances
+## Setup
+1. Install dependencies:
 ```bash
 npm install
 ```
 
-3. Configurez les variables d'environnement
-- Copiez `.env.example` vers `.env`
-- Ajoutez votre clé API YouTube dans le fichier `.env`
+2. Configure environment:
+- Copy `.env.example` to `.env`
+- Add your YouTube API key
 
-4. Démarrez l'application
+3. Run the server:
 ```bash
 npm run dev
 ```
 
 ## API Endpoints
+- GET /api/latest-video: Get latest video with transcript
 
-- `GET /api/latest-video` : Récupère la dernière vidéo de Lex Fridman avec sa transcription
+## Stack
+- Node.js
+- Express
+- YouTube API
+- YouTube Transcript API
