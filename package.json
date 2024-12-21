@@ -1,0 +1,19 @@
+{
+  "name": "youtube-news",
+  "version": "1.0.0",
+  "description": "YouTube transcript fetcher for Lex Fridman videos",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "axios": "^0.21.1",
+    "youtube-transcript": "^1.0.4",
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
